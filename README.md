@@ -7,7 +7,7 @@ on   user   ID   and   password.   Specifically,   you   need   to develop   two
 RShellServer1.c  (you  can  use SimpleRShellClient.c  and SimpleRShellServer.c as starting point) such that  
 
 •RShellServer1 <port number>   <password file>
-will  listen  on  the  specified <port  number>  and  authenticate the  remote  shell  command  by comparing  the  SHA1  
+will  listen  on  the  specified <port  number>  and  authenticate the  remote  shell  command  by comparing  the  SHA1
 hash  of  the password  provided  by  the  client  with  that in  the  <password  file>.  If  the  authentication  is 
 successful,  execute  the  shell  command  and  return  the execution result  back  to  client.  
 The <password file> should contain one or more line: <ID string>; <hex of SHA1(PW)> 
